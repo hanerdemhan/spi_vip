@@ -1,8 +1,6 @@
 `include "../rtl/spi_if.sv"
-
 import uvm_pkg::*;
 `include "uvm_macros.svh"
-
 import spi_pkg::*;
 
 module tb_spi_top();
@@ -10,7 +8,6 @@ module tb_spi_top();
     logic rst_n;
     spi_if spi(clk, rst_n);
 
-    // Clock üret
     always #5 clk = ~clk;
 
     initial begin
@@ -20,6 +17,6 @@ module tb_spi_top();
     end
 
     initial begin
-        run_test();
+        run_test("spi_test");
     end
 endmodule

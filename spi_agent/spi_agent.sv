@@ -4,7 +4,6 @@ class spi_agent extends uvm_agent;
     spi_driver drv;
     spi_monitor mon;
     spi_sequencer seqr;
-
     virtual spi_if spi;
 
     function new(string name, uvm_component parent);
