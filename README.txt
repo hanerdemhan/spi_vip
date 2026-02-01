@@ -1,7 +1,7 @@
 SPI UVM Verification IP 
 ========================
 
-Bu proje, UVM (Universal Verification Methodology) standardında geliştirilmiş, endüstri seviyesinde SPI Verification IP (VIP) içeren eksiksiz bir doğrulama ortamı sağlar.
+Bu proje, UVM (Universal Verification Methodology) standardında geliştirilmiş, endüstri seviyesinde SPI Verification IP (VIP) içeren bir doğrulama ortamı sağlar.
 
 ----------------------------
 Klasör Yapısı
@@ -51,7 +51,7 @@ Gerekli Yazılımlar
 ----------------------------
 
 - ModelSim / Questa veya UVM destekli başka bir SystemVerilog simülatörü
-- UVM 1.2 kütüphanesi (ModelSim’le birlikte gelir)
+- UVM 1.2 kütüphanesi
 - Terminal veya komut satırı
 
 ----------------------------
@@ -102,15 +102,3 @@ Tamamlanan UVM Mimarisi
 - Test: Environment’ı kurar ve SPI sequence başlatır.
 - Top-level Testbench: run_test("spi_test") ile tüm UVM akışını başlatır.
 
-----------------------------
-Geliştirme Önerileri
-----------------------------
-
-- Coverage ekleyebilirsiniz.
-- Farklı SPI senaryoları için sequence sınıfını geliştirebilirsiniz.
-- UVM config_db kullanarak SPI parametrelerini konfigüre edebilirsiniz.
-- Driver ve monitor’a SPI MODE0/MODE3 gibi destek ekleyebilirsiniz.
-
-----------------------------
-Sonuç
-----------------------------
